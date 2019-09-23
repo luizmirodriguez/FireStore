@@ -1,0 +1,16 @@
+Package: FireStore
+Type: Package
+Title: Conexion a FireBase
+Version: 0.1.0
+Author: person("Luis Rodriguez", email = "lrodriguez@attachmedia.com", role = c("aut", "cre"),web="https://luisrodriguez.pe")
+Maintainer: Luis Rodriguez <lrodriguez@attachmedia.com>
+Description: Paquete que nos facilita la conexion a FireBase para manipular la data.
+License: GPL-3
+Encoding: UTF-8
+Imports:
+  httr (>= 1.2.1),
+  jsonlite (>= 	1.4),
+  curl (>= 2.3),
+  httpuv (>= 1.5.2)
+LazyData: true 
+RoxygenNote: 6.1.1
