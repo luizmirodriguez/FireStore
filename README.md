@@ -42,9 +42,19 @@ library("curl")
 
 primero debemos obtener un token para acceder a firebase y para ello debes ir a console.developers.google.com  y obtener  CLIENT ID Y CLIENT SECRET 
 
+Nos autentificamos
 ```
 auth <- fireStore.google_firestore("xxxxxxxxxxxxxxxxxx.apps.googleusercontent.com","-xxxxxxxxxxxxx") 
+```
+
+Podemos descargar Colección
+```
 data <- fireStore.download("mi-proyecto-2112" , "miColeccion",auth$credentials$access_token ,"D://data.rds")
+```
+
+Podemos hacer un conteo de una Colección
+```
+fireStore.count("mi-proyecto-6465" , "miColeccion", auth$credentials$access_token)
 ```
 
 ## Soporte 📖
