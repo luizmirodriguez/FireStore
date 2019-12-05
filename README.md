@@ -19,7 +19,7 @@ un paquete que nos ayuda a poder conectarnos desde R a una colección de Firebas
 solo necesitamos instalar el paquete **fireStore**
 
 ```
-install.packages("fireStore")
+devtools::install_github("luizmirodriguez/FireStore")
 library("FireStore")
 ```
 
