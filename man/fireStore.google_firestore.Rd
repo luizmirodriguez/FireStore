@@ -4,8 +4,11 @@
 \alias{fireStore.google_firestore}
 \title{The OAuth function to get access to the cloud firestore:}
 \usage{
-fireStore.google_firestore(web_client_id = "prompt",
-  web_client_secret = "prompt", cache = FALSE)
+fireStore.google_firestore(
+  web_client_id = "prompt",
+  web_client_secret = "prompt",
+  cache = FALSE
+)
 }
 \arguments{
 \item{web_client_id}{The Web Client ID of your Google OAuth in your Firebase. {string}}
