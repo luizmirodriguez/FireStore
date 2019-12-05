@@ -20,7 +20,7 @@ solo necesitamos instalar el paquete **fireStore**
 
 ```
 devtools::install_github("luizmirodriguez/FireStore")
-library("FireStore")
+library(FireStore)
 ```
 
 antes de utilizarlo necesitamos instalar los siguientes paquetes
