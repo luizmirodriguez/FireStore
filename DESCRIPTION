@@ -10,7 +10,6 @@ Encoding: UTF-8
 Imports:
   httr (>= 1.2.1),
   jsonlite (>= 	1.4),
-  curl (>= 2.3),
   httpuv (>= 1.5.2)
 LazyData: true 
 RoxygenNote: 6.1.1
