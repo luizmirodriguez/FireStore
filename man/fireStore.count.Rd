@@ -20,7 +20,9 @@ retorna un numero de la cantidad de registros
 fireStore::fireStore.count nos retorna un numero de la cantidad de registros
 }
 \examples{
-fireStore.count("mi-proyecto-6465" , "micoleccion", auth$credentials$access_token)
+\dontrun{
+fireStore.count("mi-proyecto-6465" , "micoleccion", "KxwWNTVdplXFRZwGMkH")
+}
 }
 \author{
 Luis Rodriguez

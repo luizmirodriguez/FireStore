@@ -4,8 +4,11 @@
 \alias{fireStore.google_firestore}
 \title{The OAuth function to get access to the cloud firestore:}
 \usage{
-fireStore.google_firestore(web_client_id = "prompt",
-  web_client_secret = "prompt", cache = FALSE)
+fireStore.google_firestore(
+  web_client_id = "prompt",
+  web_client_secret = "prompt",
+  cache = FALSE
+)
 }
 \arguments{
 \item{web_client_id}{The Web Client ID of your Google OAuth in your Firebase. {string}}
@@ -21,7 +24,9 @@ Returns the token data.
 fireStore::fireStore.google_firestore retrieves a token with read access to the cloud firestore
 }
 \examples{
+\dontrun{
 fireStore.google_firestore("xxxxxxxxxxxxx","xxxxxxxxxxxxxxxxx")
+}
 }
 \author{
 Paul Spende

@@ -22,7 +22,9 @@ retorna un dataframe con el toda la informacion de la coleccion
 fireStore::fireStore.download nos retorna un dataframe con la toda la data de la coleccion
 }
 \examples{
-fireStore.download("mi-proyecto-6465" , "micoleccion", auth$credentials$access_token ,"D://archivo.rds")
+\dontrun{
+fireStore.download("mi-proyecto-6465" , "micoleccion", "KxwWNTVdplXFRZwGMkH")
+}
 }
 \author{
 Luis Rodriguez

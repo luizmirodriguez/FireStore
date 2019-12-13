@@ -3,3 +3,6 @@
 export(fireStore.count)
 export(fireStore.download)
 export(fireStore.google_firestore)
+importFrom(httr,add_headers)
+importFrom(jsonlite,fromJSON)
+importFrom(tractor.base,implode)

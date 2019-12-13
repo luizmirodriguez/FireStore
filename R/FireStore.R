@@ -7,7 +7,9 @@
 #' @return Returns the token data.
 #' @export
 #' @examples
+#' \dontrun{
 #' fireStore.google_firestore("xxxxxxxxxxxxx","xxxxxxxxxxxxxxxxx")
+#' }
 fireStore.google_firestore <- function(web_client_id = "prompt", web_client_secret = "prompt", cache = FALSE) {
   if (web_client_id == "prompt" && web_client_secret == "prompt") {
     web_client_id <- readline(prompt = "Web Client ID: ")
@@ -31,9 +33,14 @@ fireStore.google_firestore <- function(web_client_id = "prompt", web_client_secr
 #' @param token token que nos retorna la funcion FireStore.google_firestore {string}
 #' @param save_path ruta para guardar en el disco duro en formato RDS {string}
 #' @return retorna un dataframe con el toda la informacion de la coleccion
+#' @importFrom httr add_headers
+#' @importFrom jsonlite fromJSON
+#' @importFrom tractor.base implode
 #' @export
 #' @examples
-#' fireStore.download("mi-proyecto-6465" , "micoleccion", auth$credentials$access_token ,"D://archivo.rds")
+#' \dontrun{
+#' fireStore.download("mi-proyecto-6465" , "micoleccion", "KxwWNTVdplXFRZwGMkH")
+#' }
 fireStore.download <- function(project_id,fileName,token, save_path=NULL){
   nextPageToken <-''
   result_save <- c()
@@ -64,9 +71,13 @@ fireStore.download <- function(project_id,fileName,token, save_path=NULL){
 #' @param fileName nombre de la coleccion. {string}
 #' @param token token que nos retorna la funcion FireStore.google_firestore {string}
 #' @return retorna un numero de la cantidad de registros
+#' @importFrom httr add_headers
+#' @importFrom jsonlite fromJSON
 #' @export
 #' @examples
-#' fireStore.count("mi-proyecto-6465" , "micoleccion", auth$credentials$access_token)
+#' \dontrun{
+#' fireStore.count("mi-proyecto-6465" , "micoleccion", "KxwWNTVdplXFRZwGMkH")
+#' }
 fireStore.count <- function(project_id,fileName,token){
   pagination <- 300
   nextPageToken <-''
