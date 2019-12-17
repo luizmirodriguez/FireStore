@@ -72,5 +72,5 @@ fireStore.count("mi-proyecto-6465" , "miColeccion", auth$credentials$access_toke
 
 ## Sponsors
 
-![fireStore](https://image.prntscr.com/image/GZc4BL92SOix1qVBgiPVRg.png)
+![attachmedia.com](https://image.prntscr.com/image/GZc4BL92SOix1qVBgiPVRg.png)
 
