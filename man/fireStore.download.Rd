@@ -2,24 +2,24 @@
 % Please edit documentation in R/FireStore.R
 \name{fireStore.download}
 \alias{fireStore.download}
-\title{Download nos permite descargar toda una coleccion  de Cloud Firestore}
+\title{Download allows us to download a whole collection of Cloud Firestore}
 \usage{
 fireStore.download(project_id, fileName, token, save_path = NULL)
 }
 \arguments{
-\item{project_id}{Este es el identificador unico de tu proyecto de Firebase. {string}}
+\item{project_id}{This is the unique identifier of your Firebase project {string}}
 
-\item{fileName}{nombre de la coleccion. {string}}
+\item{fileName}{Name of the collection {string}}
 
-\item{token}{token que nos retorna la funcion FireStore.google_firestore {string}}
+\item{token}{token that returns us the funcion FireStore.google_firestore {string}}
 
-\item{save_path}{ruta para guardar en el disco duro en formato RDS {string}}
+\item{save_path}{path to save to hard drive in RDS format {string}}
 }
 \value{
-retorna un dataframe con el toda la informacion de la coleccion
+a dataframe returns with all the information of the collection
 }
 \description{
-fireStore::fireStore.download nos retorna un dataframe con la toda la data de la coleccion
+fireStore::fireStore.download a dataframe returns with all the data of the collection
 }
 \examples{
 \dontrun{

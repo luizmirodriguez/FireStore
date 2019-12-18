@@ -2,22 +2,22 @@
 % Please edit documentation in R/FireStore.R
 \name{fireStore.count}
 \alias{fireStore.count}
-\title{Count nos permite hace un conteo de registros de una coleccion  de Cloud Firestore}
+\title{Count allows us to count records from a Cloud Firestore collection}
 \usage{
 fireStore.count(project_id, fileName, token)
 }
 \arguments{
-\item{project_id}{Este es el identificador único de tu proyecto de Firebase. {string}}
+\item{project_id}{This is the unique identifier of your Firebase project {string}}
 
-\item{fileName}{nombre de la coleccion. {string}}
+\item{fileName}{Name of the collection {string}}
 
-\item{token}{token que nos retorna la funcion FireStore.google_firestore {string}}
+\item{token}{token that returns the function FireStore.google_firestore{string}}
 }
 \value{
-retorna un numero de la cantidad de registros
+returns a number of the number of records
 }
 \description{
-fireStore::fireStore.count nos retorna un numero de la cantidad de registros
+fireStore::fireStore.count returns a number of the number of records
 }
 \examples{
 \dontrun{

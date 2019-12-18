@@ -1,17 +1,18 @@
 Package: FireStore
 Type: Package
-Title: Conexion a FireBase
+Title: Connecting R to Google Firebase
 Version: 0.1.0
-Authors@R: person("Luis","Rodriguez", email = "lrodriguez@attachmedia.com", role = c("aut", "cre"))
-Maintainer: Luis Rodriguez <lrodriguez@attachmedia.com>
-Description: Paquete que nos facilita la conexion a FireBase para manipular la data.
+Authors@R: c(person("Luis","Rodriguez", email = "luizmirodriguez@gmail.com", role = c("aut", "cre")), person("Paul", "Spende", email = "paul.spende@gmail.com", role =  c("ctb")))
+Maintainer: Luis Rodriguez <luizmirodriguez@gmail.com>,Paul Spende  <paul.spende@gmail.com>
+Description: connection to firebase for the Cloud Firestore type database through a token we access and manipulate the collections (download and count), for more information you can check the github repository
 License: GPL-3
 URL: https://github.com/luizmirodriguez/FireStore
 Encoding: UTF-8
-Imports:
-  httr (>= 1.2.1),
-  jsonlite (>= 	1.4),
-  httpuv (>= 1.5.2),
-  tractor.base (>= 3.3.2)
-LazyData: true 
-RoxygenNote: 7.0.2 
+Imports: httr (>= 1.2.1), jsonlite (>= 1.4), httpuv (>= 1.5.2),
+        tractor.base (>= 3.3.2)
+LazyData: true
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2019-12-18 04:15:39 UTC; luis rodriguez
+Author: Luis Rodriguez [aut, cre],
+  Paul Spende [ctb]

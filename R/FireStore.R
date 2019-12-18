@@ -25,14 +25,14 @@ fireStore.google_firestore <- function(web_client_id = "prompt", web_client_secr
                        cache = cache)
 }
 
-#' @title Download nos permite descargar toda una coleccion  de Cloud Firestore
+#' @title Download allows us to download a whole collection of Cloud Firestore
 #' @author Luis Rodriguez
-#' @description fireStore::fireStore.download nos retorna un dataframe con la toda la data de la coleccion
-#' @param project_id Este es el identificador unico de tu proyecto de Firebase. {string}
-#' @param fileName nombre de la coleccion. {string}
-#' @param token token que nos retorna la funcion FireStore.google_firestore {string}
-#' @param save_path ruta para guardar en el disco duro en formato RDS {string}
-#' @return retorna un dataframe con el toda la informacion de la coleccion
+#' @description fireStore::fireStore.download a dataframe returns with all the data of the collection
+#' @param project_id This is the unique identifier of your Firebase project {string}
+#' @param fileName Name of the collection {string}
+#' @param token token that returns us the funcion FireStore.google_firestore {string}
+#' @param save_path path to save to hard drive in RDS format {string}
+#' @return a dataframe returns with all the information of the collection
 #' @importFrom httr add_headers
 #' @importFrom jsonlite fromJSON
 #' @importFrom tractor.base implode
@@ -46,7 +46,7 @@ fireStore.download <- function(project_id,fileName,token, save_path=NULL){
   result_save <- c()
   while (TRUE) {
     download_url <- paste0("https://firestore.googleapis.com/v1/projects/",project_id,"/databases/(default)/documents/",fileName,"?pageSize=300",nextPageToken)
-    print(paste0("download...",download_url))
+    message(paste0("download...",download_url))
     response <- httr::GET(url = download_url, add_headers("Authorization" = paste0("Bearer ", token)))
     response <- httr::content(response,"text", encoding = "UTF-8")
     response_tmp <- fromJSON(response)
@@ -64,13 +64,13 @@ fireStore.download <- function(project_id,fileName,token, save_path=NULL){
   }
 }
 
-#' @title Count nos permite hace un conteo de registros de una coleccion  de Cloud Firestore
+#' @title Count allows us to count records from a Cloud Firestore collection
 #' @author Luis Rodriguez
-#' @description fireStore::fireStore.count nos retorna un numero de la cantidad de registros
-#' @param project_id Este es el identificador único de tu proyecto de Firebase. {string}
-#' @param fileName nombre de la coleccion. {string}
-#' @param token token que nos retorna la funcion FireStore.google_firestore {string}
-#' @return retorna un numero de la cantidad de registros
+#' @description fireStore::fireStore.count returns a number of the number of records
+#' @param project_id This is the unique identifier of your Firebase project {string}
+#' @param fileName Name of the collection {string}
+#' @param token token that returns the function FireStore.google_firestore{string}
+#' @return returns a number of the number of records
 #' @importFrom httr add_headers
 #' @importFrom jsonlite fromJSON
 #' @export
@@ -84,7 +84,7 @@ fireStore.count <- function(project_id,fileName,token){
   i <- 0
   while (TRUE) {
     count_url  <- paste0("https://firestore.googleapis.com/v1/projects/",project_id,"/databases/(default)/documents/",fileName,"?pageSize=",pagination,nextPageToken)
-    print(paste0("count...",count_url ))
+    message(paste0("count...",count_url ))
     response <- httr::GET(url = count_url , add_headers("Authorization" = paste0("Bearer ", token)))
     response <- httr::content(response,"text", encoding = "UTF-8")
     response_tmp <- fromJSON(response)
