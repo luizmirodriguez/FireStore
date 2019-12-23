@@ -1,26 +1,22 @@
 #' @title The OAuth function to get access to the cloud firestore:
-#' @author Paul Spende
+#' @author Luis Rodriguez
 #' @description fireStore::fireStore.google_firestore retrieves a token with read access to the cloud firestore
-#' @param web_client_id The Web Client ID of your Google OAuth in your Firebase. {string}
-#' @param web_client_secret The Web Client Secret of your Google OAuth in your Firebase. {string}
+#' @param client_id The Client ID of your Google OAuth. {string}
+#' @param client_secret The Client Secret of your Google OAuth. {string}
 #' @param cache Cache the tokens in the .httr-oauth file or not. {boolean}
-#' @return Returns the token data.
+#' @return Returns the token.
 #' @export
 #' @examples
 #' \dontrun{
 #' fireStore.google_firestore("xxxxxxxxxxxxx","xxxxxxxxxxxxxxxxx")
 #' }
-fireStore.google_firestore <- function(web_client_id = "prompt", web_client_secret = "prompt", cache = FALSE) {
-  if (web_client_id == "prompt" && web_client_secret == "prompt") {
-    web_client_id <- readline(prompt = "Web Client ID: ")
-    web_client_secret <- readline(prompt = "Web Client Secret: ")
-  }
+fireStore.google_firestore <- function(client_id , client_secret , cache = FALSE) {
 
-  myapp <- httr::oauth_app("google",
-                           key = web_client_id,
-                           secret = web_client_secret)
+  response <- httr::oauth_app("google",
+                           key = client_id,
+                           secret = client_secret)
 
-  httr::oauth2.0_token(httr::oauth_endpoints("google"), myapp,
+  httr::oauth2.0_token(httr::oauth_endpoints("google"), response,
                        scope = "https://www.googleapis.com/auth/datastore https://www.googleapis.com/auth/cloud-platform",
                        cache = cache)
 }
