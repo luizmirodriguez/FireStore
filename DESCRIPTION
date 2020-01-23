@@ -4,7 +4,7 @@ Title: Connecting R to Google Firebase
 Version: 0.1.0
 Authors@R: person("Luis","Rodriguez", email = "luizmirodriguez@gmail.com", role = c("aut", "cre"))
 Maintainer: Luis Rodriguez <luizmirodriguez@gmail.com>
-Description: connection to firebase for the Cloud Firestore type database through a token we access and manipulate the collections (download and count), for more information you can check the github repository.
+Description: Connection to firebase for the Cloud Firestore type database through a token we access and manipulate the collections (download and count), for more information you can check the github repository.
 License: MIT + file LICENSE
 URL: https://github.com/luizmirodriguez/FireStore
 Encoding: UTF-8
