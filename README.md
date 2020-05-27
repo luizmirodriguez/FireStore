@@ -59,11 +59,11 @@ fireStore.count("mi-proyecto-6465" , "miColeccion", auth$credentials$access_toke
 
 ## Soporte 📖
 
-* **Luis Rodriguez** - *Digital Analytics Engineer* - <lrodriguez@attachmedia.com> - (https://luisrodriguez.pe) 
+* **Luis Rodriguez** - *Digital Analytics Engineer* - <luizmirodriguez@gmail.com> - (https://luisrodriguez.pe) 
 
 ## Autores ✒️
 
-* **Luis Rodriguez** - *Digital Analytics Engineer* - <lrodriguez@attachmedia.com> - (https://luisrodriguez.pe) 
+* **Luis Rodriguez** - *Digital Analytics Engineer* - <luizmirodriguez@gmail.com> - (https://luisrodriguez.pe) 
 
 
 ## Licencia 📄
